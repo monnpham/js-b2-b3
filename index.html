@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div id="box" class="container">
+        <h1>BÀI TẬP JS</h1>
+        <div id="content">
+            <button id="bai1">Bài 1</button>
+            <button id="bai2">Bài 2</button>
+            <button id="bai3">Bài 3</button>
+            <button id="bai4">Bài 4</button>
+            <button id="bai5">Bài 5</button>
+            <!-- Bài 1 -->
+            <!-- Tính tiền lương -->
+            <div id="b1">
+                <h2>TÍNH LƯƠNG</h2>
+                <br><input type="number" id="day" placeholder="Số ngày làm"> <br>
+                <button onclick="enter()" class="btn">Enter</button><br>
+                <h3> Tiền Lương: <output id="salary"></output></h3>
+            </div>
+            <!-- Bài 2 -->
+            <!-- Tính giá trị trung bình -->
+            <div id="b2">
+                <h2>GIÁ TRỊ TRUNG BÌNH 5 SỐ</h2>
+                <br>
+                <input type="number" id="n1" placeholder="Số Thực Thứ 1"><br>
+                <input type="number" id="n2" placeholder="Số Thực Thứ 2"><br>
+                <input type="number" id="n3" placeholder="Số Thực Thứ 3"><br>
+                <input type="number" id="n4" placeholder="Số Thực Thứ 4"><br>
+                <input type="number" id="n5" placeholder="Số Thực Thứ 5"><br>
+                <button onclick="enter1()" class="btn">Enter</button><br>
+                <h3>Trung bình cộng = <output id="average"></output></h3>
+
+            </div>
+            <!-- Bài 3 -->
+            <!-- Quy đổi tiền -->
+            <div id="b3">
+                <h2>ĐỔI TIỀN TỆ</h2> <br>
+                <input type="number" id="usd" placeholder="USD"> <br>
+                <button onclick="enter2()" class="btn">Enter</button> <br>
+                <h3><output id="trans"></output>VND<br></h3>
+            </div>
+
+            <!-- Bài 4-->
+            <!-- dt cv hình chữ nhật-->
+            <div id="b4">
+                <h2>TÍNH DIỆN TÍCH, CHU VI HÌNH CHỮ NHẬT</h2>
+                <input type="number" id="d" placeholder="Chiều Dài"><br>
+                <input type="number" id="r" placeholder="Chiều Rộng"><br>
+                <button onclick="enter3()" class="btn btn1">Enter</button>
+                <br>
+                <h3 class="dtcv">
+                    Diện tích = <output id="dt"></output>
+                    , Chu vi = <output id="cv"></output>
+                </h3>
+                </p>
+            </div>
+
+            <!-- Bài 5-->
+            <!-- Tính tổng 2 ký số-->
+            <div id="b5">
+                <output id="so_hang_chuc" style="display: none;"> </output>
+                <output id="so_hang_dv" style="display: none;"></output>
+                <h2>TÍNH TỔNG 2 KÝ SỐ</h2> <br>
+                <input type="number" id="num" placeholder="Nhập số có 2 chữ số"> <br>
+                <button onclick="enter4()" class="btn">Enter</button> <br>
+                <h3>
+                    Tổng:
+                    <output id="sum"></output>
+                </h3>
+                <br>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js.js"></script>
+</body>
+
+</html>
